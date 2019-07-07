@@ -1,4 +1,4 @@
-# pet-treat
+# Friends-achievement
 
 An achievements friends app using hooks
 
