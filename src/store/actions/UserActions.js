@@ -1,10 +1,10 @@
 
-function somefunc() {
-  return async (dispatch) => {
+function usersomefunc() {
+  return (dispatch) => {
     dispatch({ type: '', payload: {  } })
   }
 }
 
 export default {
-  somefunc,
+  usersomefunc,
 }

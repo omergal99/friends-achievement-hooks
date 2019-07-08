@@ -1,8 +1,9 @@
 // import FriendsService from '../../services/FriendsService';
 
 function somefunc() {
-  return async (dispatch) => {
-    dispatch({ type: '', payload: {  } })
+  console.log('sdgsdgsg')
+  return (dispatch) => {
+    dispatch({ type: 'addFriend', payload: {} })
   }
 }
 

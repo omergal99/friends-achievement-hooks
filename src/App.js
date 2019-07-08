@@ -1,12 +1,12 @@
 import React from 'react';
 import './assets/css/App.scss';
 
-import Main from './pages/Main';
+import Achieves from './pages/Achieves';
 
 function App() {
   return (
     <div className="App">
-     <Main/>
+     <Achieves/>
     </div>
   );
 }
