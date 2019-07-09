@@ -1,12 +1,12 @@
 import React from 'react';
 import './assets/css/App.scss';
 
-import Achieves from './pages/Achieves';
+import FriendsAchieves from './pages/FriendsAchieves';
 
 function App() {
   return (
     <div className="App">
-     <Achieves/>
+     <FriendsAchieves/>
     </div>
   );
 }

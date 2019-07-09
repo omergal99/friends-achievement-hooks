@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import actions from '../store/actions';
 
-function Achieves() {
+function Try() {
 
   // STORE
   // Q - What the diff between useStore to useSelector
@@ -41,27 +41,14 @@ function Achieves() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
       {list && list}
-      <button onClick={addFriend.bind(this)}>
-        Click me
-      </button>
+      <button onClick={addFriend.bind(this)}> Add friend</button>
     </div>
   );
 }
 
-// function mapStateToProps(state) {
-//   console.log(state)
-//   return {
-//     friends: state.friendsStore.friends
-//   }
-// }
-
-// export default connect(mapStateToProps, actions)(Achieves);
-
-export default Achieves;
+// export default Try;
 
 // FOR BETTER PERFORMANCE
-// export default React.memo(Achieves)
+export default React.memo(Try)

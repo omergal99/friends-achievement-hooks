@@ -10,6 +10,8 @@ export default (state = initialState, action) => {
   // console.log('reducer: FRIENDS state: ', state, ", action.type: ", action)
   var copy;
   switch (action.type) {
+    case 'setFriends':
+      return action.payload;
     case 'addFriend':
       copy = JSON.parse(JSON.stringify(state));
       copy.friends.push({ name: 'Tomer22' });
