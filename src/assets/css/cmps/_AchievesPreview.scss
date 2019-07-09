@@ -1,24 +1,26 @@
 .achieves-prev {
   background-color: rgb(255, 213, 124);
-  height: calc(100vh - 90px);
   .friend-name {
-    height: 20px;
-    padding: 4px 8px;
+    background-color: #a8dcfd;
+    width: 100%;
+    height: 24px;
+    padding: 4px 8px 6px 8px;
     font-weight: bold;
+    border-bottom: 1.5px solid #8e9ead8c;
+    position: fixed;
+    top: 0;
   }
   ul {
-    height: calc(100% - 20px);
     margin: 0;
     padding: 4px;
     list-style-type: none;
     overflow-y: auto;
+    margin-top: 24px;
     li {
       &:not(:first-child) {
-        // margin: 4px 0 0 0;
         margin-top: 4px;
       }
       &:not(:last-child) {
-        // margin: 0 0 4px 0;
         margin-bottom: 4px;
       }
       .achieve-container {
@@ -26,7 +28,6 @@
         height: 130px;
         width: 100%;
         background-color: rgb(102, 189, 230);
-
         border: 1px solid rgb(209, 198, 198);
         border-radius: 3px;
         display: grid;
@@ -93,9 +94,9 @@
           // background: linear-gradient(to right, #ffc43d -20%, #f8ef7c 60%, #30322ddb 0%, #30322ddb 100%);
           border-radius: 2px;
           span {
+            padding: 1px;
+            display: block;
             font-family: libre, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            position: relative;
-            top: 1.5px;
             font-weight: bold;
             text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
           }

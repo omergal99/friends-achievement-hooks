@@ -41,7 +41,10 @@ function FriendsAchieves() {
 
   return (
     <div className="achieves">
-      <AchievesList achievesList={achieves} friend={selectedFriend}/>
+      <div>
+
+        <AchievesList achievesList={achieves} friend={selectedFriend} />
+      </div>
       <FriendsList friendsList={friends} onSelectFriend={selectFriend.bind(this)} />
     </div>
   );

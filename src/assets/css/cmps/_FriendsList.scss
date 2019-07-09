@@ -1,9 +1,11 @@
 .achieves-bar {
   background-color: #dfecf4;
-  background: linear-gradient(217deg, #dfecf4, #0000 70.71%), linear-gradient(127deg, #a8deff, #0000 70.71%),
-    linear-gradient(336deg, #a6d6f5, #0000 70.71%);
+  background: linear-gradient(0.37turn, #dfecf4, #a8deff, #a6d6f5);
   height: 90px;
-
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
   ul {
     outline: 1px solid #8d97a0;
     height: 100%;
