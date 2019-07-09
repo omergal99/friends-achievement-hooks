@@ -1,8 +1,23 @@
 const initialState = {
   achieves: [
-    { name: 'omer' },
-    { name: 'omeri' },
-    { name: 'Tomer' }
+    {
+      _id: '101',
+      title: 'title -title 111',
+      description: 'description description description description',
+      icon: '',
+      level: 1,
+      capacity: 50,
+      process: 23,
+    },
+    {
+      _id: '102',
+      title: 'title -title 222',
+      description: 'description description description description',
+      icon: '',
+      level: 5,
+      capacity: 100,
+      process: 5,
+    }
   ]
 }
 

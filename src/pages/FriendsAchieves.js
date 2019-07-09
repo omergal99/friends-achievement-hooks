@@ -18,12 +18,13 @@ function FriendsAchieves() {
   const achieves = useSelector(state => state.achievesStore.achieves);
 
   // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
+  const [selectedFriend, setfriend] = useState('');
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     console.log('componentDidMount BY USING useEffect')
     dispatch(actions.loadFriends())
+    dispatch(actions.loadAchieves())
     // console.log(this.props)
   }, []);
 
@@ -34,14 +35,14 @@ function FriendsAchieves() {
   // )
 
 
-  const addFriend = () => {
-    dispatch(actions.somefunc())
+  const selectFriend = (friend) => {
+    setfriend(friend)
   }
 
   return (
     <div className="achieves">
-      <AchievesList achievesList={achieves}/>
-      <FriendsList friendsList={friends} />
+      <AchievesList achievesList={achieves} friend={selectedFriend}/>
+      <FriendsList friendsList={friends} onSelectFriend={selectFriend.bind(this)} />
     </div>
   );
 }

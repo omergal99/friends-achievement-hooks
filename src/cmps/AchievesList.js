@@ -1,24 +1,21 @@
 import React from 'react';
 import AchievesPreview from '../cmps/AchievesPreview';
 
-function AchievesList({achievesList,achievesStatus}) {
+function AchievesList({ achievesList, friend }) {
 
-  // const list = achievesList.map((achieve, idx) => {
-  //   return <li key={idx}>
-  //     <div>
-  //       <div className="wrap-img">
-  //         <img src={achieve.img} alt="" />
-  //       </div>
-  //       <div className="name">
-  //         <label>{achieve.name} </label>
-  //       </div>
-  //     </div>
-  //   </li>
-  // })
+  const friendAchieves = friend.achieves ? friend.achieves : [];
+
+  const list = achievesList.map((achieve, idx) => {
+    const details = friendAchieves.find((friendAchieve) => friendAchieve._id === achieve._id)
+    return <AchievesPreview key={idx} details={details} achieve={achieve} />
+  })
 
   return (
     <div className="achieves-prev">
-      <div>Im List</div>
+      <div className="friend-name">{friend.name ? friend.name : 'Choose someone..'}</div>
+      <ul>
+        {list && list}
+      </ul>
     </div>
   );
 }

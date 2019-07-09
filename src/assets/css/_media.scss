@@ -1,10 +1,16 @@
 /************************** Tablet and Desktop **************************/
 
 @media (min-width: 500px) {
-    // Tablet
+  // Tablet
 }
 
 @media (min-width: 1030px) {
-    // Desktop
+  // Desktop
 }
 
+@media (min-width: 330px) {
+  // Tablet
+  .achieves-prev ul li .achieve-container .title span {
+    font-size: 1.2em;
+  }
+}
