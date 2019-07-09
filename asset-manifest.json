@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/friends-achievement-hooks/static/css/main.e8011f4b.chunk.css",
-    "main.js": "/friends-achievement-hooks/static/js/main.a7fb871f.chunk.js",
-    "main.js.map": "/friends-achievement-hooks/static/js/main.a7fb871f.chunk.js.map",
+    "main.css": "/friends-achievement-hooks/static/css/main.75bca595.chunk.css",
+    "main.js": "/friends-achievement-hooks/static/js/main.56a78b36.chunk.js",
+    "main.js.map": "/friends-achievement-hooks/static/js/main.56a78b36.chunk.js.map",
     "runtime~main.js": "/friends-achievement-hooks/static/js/runtime~main.fef64a14.js",
     "runtime~main.js.map": "/friends-achievement-hooks/static/js/runtime~main.fef64a14.js.map",
     "static/js/2.55fc596e.chunk.js": "/friends-achievement-hooks/static/js/2.55fc596e.chunk.js",
     "static/js/2.55fc596e.chunk.js.map": "/friends-achievement-hooks/static/js/2.55fc596e.chunk.js.map",
     "index.html": "/friends-achievement-hooks/index.html",
-    "precache-manifest.53204c84c6c8071888011bb8f632d529.js": "/friends-achievement-hooks/precache-manifest.53204c84c6c8071888011bb8f632d529.js",
+    "precache-manifest.205dfdde2a26399ee19322293b603d4b.js": "/friends-achievement-hooks/precache-manifest.205dfdde2a26399ee19322293b603d4b.js",
     "service-worker.js": "/friends-achievement-hooks/service-worker.js",
-    "static/css/main.e8011f4b.chunk.css.map": "/friends-achievement-hooks/static/css/main.e8011f4b.chunk.css.map",
+    "static/css/main.75bca595.chunk.css.map": "/friends-achievement-hooks/static/css/main.75bca595.chunk.css.map",
     "static/media/App.scss": "/friends-achievement-hooks/static/media/SourceSansPro-Regular.3f482321.ttf"
   }
 }
