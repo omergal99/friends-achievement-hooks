@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import actions from '../store/actions';
 
 import FriendsList from '../cmps/FriendsList';
-import AchievesPreview from '../cmps/AchievesPreview';
+import AchievesList from '../cmps/AchievesList';
 
 function FriendsAchieves() {
 
@@ -15,6 +15,7 @@ function FriendsAchieves() {
   // const store = useStore()
   const dispatch = useDispatch()
   const friends = useSelector(state => state.friendsStore.friends);
+  const achieves = useSelector(state => state.achievesStore.achieves);
 
   // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(0);
@@ -39,7 +40,7 @@ function FriendsAchieves() {
 
   return (
     <div className="achieves">
-      <AchievesPreview />
+      <AchievesList achievesList={achieves}/>
       <FriendsList friendsList={friends} />
     </div>
   );

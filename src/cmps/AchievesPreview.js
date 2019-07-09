@@ -2,10 +2,9 @@ import React from 'react';
 
 function AchievesPreview() {
 
-
   return (
-    <div className="achieves-prev">
-      <p>Im Preview</p>
+    <div>
+      <div>Im Preview</div>
     </div>
   );
 }
