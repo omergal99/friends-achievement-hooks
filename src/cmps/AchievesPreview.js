@@ -2,7 +2,11 @@ import React from 'react';
 
 function AchievesPreview({ achieve, details }) {
 
+  ///////////////////////////////////////////
+  ///////////////////////////////////////////
   const arrColor = ['#80ced6', '#feb236', '#ffcc5c', '#d6d4e0', '#b8a9c9', '#622569', '#c83349'];
+  ///////////////////////////////////////////
+  ///////////////////////////////////////////
   const process = details ? details.process : 0;
   const arrLevels = [2, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 5000];
   const level = arrLevels.reduce((acc, num) => process >= num ? ++acc : acc, 0);
