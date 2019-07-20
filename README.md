@@ -1,3 +1,5 @@
+Quick look how the project looks up to now: https://omergal99.github.io/friends-achievement-hooks/
+
 # Friends-achievement
 
 An achievements friends app using hooks

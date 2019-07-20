@@ -56,11 +56,16 @@
     align-items: center;
 }
 
+.align-end {
+    align-items: flex-end;
+}
+
 .flex.wrap {
     flex-wrap: wrap;
 }
 
 .flex-col {
+    display: flex;
     flex-direction: column;
 }
 
