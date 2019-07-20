@@ -22,11 +22,11 @@ function FriendsAchieves() {
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
-    console.log('componentDidMount BY USING useEffect')
-    dispatch(actions.loadFriends())
-    dispatch(actions.loadAchieves())
-    // console.log(this.props)
+    console.log('componentDidMount BY USING useEffect');
+    dispatch(actions.loadFriends());
+    dispatch(actions.loadAchieves());
   }, []);
+
 
   // USING DISPATCH
   // const incrementCounter = useCallback(
@@ -42,8 +42,7 @@ function FriendsAchieves() {
   return (
     <div className="achieves">
       <div>
-
-        <AchievesList achievesList={achieves} friend={selectedFriend} />
+      <AchievesList achievesList={achieves} friend={selectedFriend} />
       </div>
       <FriendsList friendsList={friends} onSelectFriend={selectFriend.bind(this)} />
     </div>
