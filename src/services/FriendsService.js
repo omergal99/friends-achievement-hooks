@@ -246,6 +246,11 @@ function getFriends() {
   return Promise.resolve(initialState)
 }
 
+function update() {
+  return Promise.resolve(initialState)
+}
+
 export default {
-  getFriends
+  getFriends,
+  update
 }

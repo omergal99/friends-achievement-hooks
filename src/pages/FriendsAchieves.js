@@ -39,6 +39,10 @@ function FriendsAchieves() {
     setfriend(friend)
   }
 
+  const friendRateChange = (value) => {
+    dispatch(actions.updateFriend(value));
+  }
+
   return (
     <div className="achieves">
       <div>

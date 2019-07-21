@@ -3,7 +3,6 @@ import React from 'react';
 function FriendsList({ friendsList ,onSelectFriend }) {
 
   const list = friendsList.map((friend, idx) => {
-    // return <li onClick={aaa.bind(this)} key={idx}>
     return <li onClick={()=> onSelectFriend(friend)} key={idx}>
       <div>
         <div className="wrap-img">
