@@ -11,9 +11,9 @@ function loadFriends() {
     dispatch({ type: 'setFriends', payload: friends })
   }
 }
-function updateFriend(value) {
+function updateFriendAchieve(updatedAchieve) {
   return async (dispatch) => {
-    const friends = await FriendsService.update(value);
+    const friends = await FriendsService.update(updatedAchieve);
     dispatch({ type: 'updateFriend', payload: friends })
   }
 }
@@ -21,5 +21,5 @@ function updateFriend(value) {
 export default {
   loadFriends,
   somefunc,
-  updateFriend
+  updateFriendAchieve
 }

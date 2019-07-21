@@ -39,14 +39,14 @@ function FriendsAchieves() {
     setfriend(friend)
   }
 
-  const friendRateChange = (value) => {
-    dispatch(actions.updateFriend(value));
+  const friendRateChange = (achieveId, value) => {
+    dispatch(actions.updateFriendAchieve({ friendId: selectedFriend._id, achieveId, value }));
   }
 
   return (
     <div className="achieves">
       <div>
-      <AchievesList achievesList={achieves} friend={selectedFriend} />
+        <AchievesList achievesList={achieves} friend={selectedFriend} />
       </div>
       <FriendsList friendsList={friends} onSelectFriend={selectFriend.bind(this)} />
     </div>
