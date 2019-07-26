@@ -14,7 +14,9 @@ function loadFriends() {
 function updateFriendAchieve(updatedAchieve) {
   return async (dispatch) => {
     const friends = await FriendsService.update(updatedAchieve);
-    dispatch({ type: 'updateFriend', payload: friends })
+    // dispatch({ type: 'updateFriend', payload: updatedAchieve });
+    dispatch({ type: 'doCopy' });
+    dispatch({ type: 'setFriends', payload: friends });
   }
 }
 

@@ -12,9 +12,9 @@ function FriendsAchieves() {
 
   // STORE
   // Q - What the diff between useStore to useSelector
-  // const store = useStore()
-  const dispatch = useDispatch()
-  const friends = useSelector(state => state.friendsStore.friends);
+  // const store = useStore();
+  const dispatch = useDispatch();
+  var friends = useSelector(state => state.friendsStore.friends);
   const achieves = useSelector(state => state.achievesStore.achieves);
 
   // Declare a new state variable, which we'll call "count"
@@ -27,26 +27,20 @@ function FriendsAchieves() {
     dispatch(actions.loadAchieves());
   }, []);
 
-
-  // USING DISPATCH
-  // const incrementCounter = useCallback(
-  //   () => dispatch({ type: 'increment-counter' }),
-  //   [dispatch]
-  // )
-
-
   const selectFriend = (friend) => {
     setfriend(friend)
   }
 
   const friendRateChange = (achieveId, value) => {
-    dispatch(actions.updateFriendAchieve({ friendId: selectedFriend._id, achieveId, value }));
+    const updatedAchieve = { friendId: selectedFriend._id, achieveId, value };
+    // console.log(updatedAchieve)
+    dispatch(actions.updateFriendAchieve(updatedAchieve));
   }
 
   return (
     <div className="achieves">
       <div>
-        <AchievesList achievesList={achieves} friend={selectedFriend} />
+        <AchievesList achievesList={achieves} friend={selectedFriend} onChangeRate={friendRateChange.bind(this)} />
       </div>
       <FriendsList friendsList={friends} onSelectFriend={selectFriend.bind(this)} />
     </div>

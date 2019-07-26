@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AchievesPreview({ achieve, details }) {
+function AchievesPreview({ achieve, details, changeRate }) {
 
   const arrColor = ['#80ced6', '#feb236', '#ffcc5c', '#d6d4e0', '#b8a9c9', '#622569', '#c83349', '#c83349', '#c83349', '#c83349', '#c83349'];
   const process = details ? details.process : 0;
@@ -8,6 +8,10 @@ function AchievesPreview({ achieve, details }) {
   const level = arrLevels.reduce((acc, num) => process >= num ? ++acc : acc, 0);
   const isUpgradeLevel = (arrLevels[level - 1] === process)
   const percentCompleted = (process / arrLevels[isUpgradeLevel ? level - 1 : level]) * 100;
+
+  const sendNewRate = (value) => {
+    changeRate(achieve._id, value)
+  }
 
   return (
     <li >
@@ -31,9 +35,10 @@ function AchievesPreview({ achieve, details }) {
         </div>
 
         <div className="rating flex-col align-end space-between">
-          <img style={{ transform: 'rotate(270deg)' }} onClick={() => console.log('UP')}
+          <img style={{ transform: 'rotate(270deg)' }} onClick={() => sendNewRate(1)}
             src="assets/img/icons/achieves/arrow.svg" alt="UP" />
-          <img style={{ transform: 'rotate(90deg)' }} onClick={() => console.log('DOWN')}
+
+          <img style={{ transform: 'rotate(90deg)' }} onClick={() => sendNewRate(-1)}
             src="assets/img/icons/achieves/arrow.svg" alt="DOWN" />
         </div>
 

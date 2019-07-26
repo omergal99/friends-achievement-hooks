@@ -133,8 +133,11 @@ function getFriends() {
 }
 
 function update(updatedAchieve) {
-  const idx = initialState.findIndex((friend => friend._id === updatedAchieve.friendId))
-  initialState[idx].achieves.map(achieve => (updatedAchieve.achieveId === achieve._id) ? achieve.process += updatedAchieve.value : achieve)
+  const idx = initialState.friends.findIndex((friend => friend._id === updatedAchieve.friendId))
+  // console.log(initialState.friends[idx])
+  initialState.friends[idx].achieves.map(achieve => (updatedAchieve.achieveId === achieve._id) ? achieve.process += updatedAchieve.value : achieve)
+  // const copy = JSON.parse(JSON.stringify(initialState))
+  // return Promise.resolve(copy)
   return Promise.resolve(initialState)
 }
 
