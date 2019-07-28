@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
     case 'updateFriend':
       copy = JSON.parse(JSON.stringify(state));
       const idx = copy.friends.findIndex((friend => friend._id === action.payload.friendId));
-      console.log(copy.friends[idx]);
+      // console.log(copy.friends[idx]);
       copy.friends[idx].achieves.map(achieve => (action.payload.achieveId === achieve._id) ? achieve.points += action.payload.value : achieve);   
       return copy;
     case 'doCopy':

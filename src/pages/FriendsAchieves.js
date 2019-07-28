@@ -22,12 +22,12 @@ function FriendsAchieves() {
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
-    console.log('componentDidMount BY USING useEffect');
+    // console.log('componentDidMount BY USING useEffect');
     dispatch(actions.loadFriends());
     dispatch(actions.loadAchieves());
-  }, []);
+  });
 
-  const selectFriend = (friend) => {
+  const selectFriend = friend => {
     setfriend(friend)
   }
 

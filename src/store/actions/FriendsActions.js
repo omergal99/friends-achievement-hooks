@@ -15,9 +15,9 @@ function updateFriendAchieve(updatedAchieve) {
   return async (dispatch) => {
   // return (dispatch) => {
     const friends = await FriendsService.updateOne(updatedAchieve);
-    // dispatch({ type: 'updateFriend', payload: updatedAchieve });
-    dispatch({ type: 'doCopy' });
-    dispatch({ type: 'setFriends', payload: friends });
+    dispatch({ type: 'updateFriend', payload: updatedAchieve });
+    // dispatch({ type: 'doCopy' });
+    // dispatch({ type: 'setFriends', payload: friends });
   }
 }
 
