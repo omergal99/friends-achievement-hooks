@@ -14,7 +14,7 @@ function FriendsAchieves() {
   // Q - What the diff between useStore to useSelector
   // const store = useStore();
   const dispatch = useDispatch();
-  var friends = useSelector(state => state.friendsStore.friends);
+  const friends = useSelector(state => state.friendsStore.friends);
   const achieves = useSelector(state => state.achievesStore.achieves);
 
   // Declare a new state variable, which we'll call "count"

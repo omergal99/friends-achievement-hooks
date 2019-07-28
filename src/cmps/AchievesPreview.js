@@ -3,14 +3,15 @@ import React from 'react';
 function AchievesPreview({ achieve, details, changeRate }) {
 
   const arrColor = ['#80ced6', '#feb236', '#ffcc5c', '#d6d4e0', '#b8a9c9', '#622569', '#c83349', '#c83349', '#c83349', '#c83349', '#c83349'];
-  const process = details ? details.process : 0;
+  const points = details ? details.points : 0;
   const arrLevels = [2, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 5000];
-  const level = arrLevels.reduce((acc, num) => process >= num ? ++acc : acc, 0);
-  const isUpgradeLevel = (arrLevels[level - 1] === process)
-  const percentCompleted = (process / arrLevels[isUpgradeLevel ? level - 1 : level]) * 100;
+  const level = arrLevels.reduce((acc, num) => points >= num ? ++acc : acc, 0);
+  const isUpgradeLevel = (arrLevels[level - 1] === points)
+  const percentCompleted = (points / arrLevels[isUpgradeLevel ? level - 1 : level]) * 100;
 
   const sendNewRate = (value) => {
-    changeRate(achieve._id, value)
+    if ((points > 0 && value < 0) || (points < 5000 && value > 0))
+      changeRate(achieve._id, value)
   }
 
   return (
@@ -42,9 +43,9 @@ function AchievesPreview({ achieve, details, changeRate }) {
             src="assets/img/icons/achieves/arrow.svg" alt="DOWN" />
         </div>
 
-        <div className="process-bar">
+        <div className="points-bar">
           <div style={{ background: `linear-gradient(to right, #ffc43d -20%, #f8ef7c ${percentCompleted}%, #30322ddb 0%, #30322ddb 100%)` }}>
-            <span>{process}/{arrLevels[isUpgradeLevel ? level - 1 : level]}</span>
+            <span>{points}/{arrLevels[isUpgradeLevel ? level - 1 : level]}</span>
           </div>
         </div>
 
