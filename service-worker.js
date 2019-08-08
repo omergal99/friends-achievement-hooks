@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/friends-achievement-hooks/precache-manifest.2b2b16e64375db6f5c5a5e0ae803de75.js"
+  "/friends-achievement-hooks/precache-manifest.2fd50b6f7f1cd9446152c087cc105e95.js"
 );
 
 self.addEventListener('message', (event) => {
