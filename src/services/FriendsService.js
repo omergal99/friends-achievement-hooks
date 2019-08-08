@@ -124,7 +124,58 @@ const initialState = {
         { _id: '117', title: 'המעיר על הנהיגה', points: 40 },
         { _id: '118', title: 'זה שאף פעם אין לו וויז', points: 52 },
       ]
-    }
+    },
+    {
+      _id: 4005,
+      name: 'Nitzan2', img: 'assets/img/friends/nitzan.jpg',
+      score: 3,
+      achieves: [
+        { _id: '101', title: 'The multi champion', points: 1780 },
+        { _id: '102', title: 'המסיע המתמיד', points: 7 },
+        { _id: '103', title: 'החונה במהירות', points: 7 },
+        { _id: '104', title: 'המטייל בחו"ל', points: 70 },
+        { _id: '105', title: 'העוזר לחבר', points: 570 },
+        { _id: '106', title: 'השומר על קשר', points: 17 },
+        { _id: '107', title: 'זה שכל היום בפלאפון', points: 7 },
+        { _id: '108', title: 'הרומנטיקן', points: 57 },
+        { _id: '109', title: 'rogue hazelnut!', points: 67 },
+        { _id: '110', title: 'יש ברית מילה לסבתא שלי', points: 7 },
+        { _id: '111', title: 'אכלתי שווארמה', points: 7 },
+        { _id: '112', title: 'הנוסע המתמיד', points: 7 },
+        { _id: '113', title: 'המביא פירות', points: 572 },
+        { _id: '114', title: 'האוהב להתארגן', points: 4799 },
+        { _id: '115', title: 'מפעיל שירים באוטו', points: 271 },
+        { _id: '116', title: 'איש המצלמה', points: 177 },
+        { _id: '117', title: 'המעיר על הנהיגה', points: 47 },
+        { _id: '118', title: 'זה שאף פעם אין לו וויז', points: 57 },
+      ]
+    },
+    {
+      _id: 4006,
+      name: 'Nitzan3', img: 'assets/img/friends/nitzan.jpg',
+      score: 3,
+      achieves: [
+        { _id: '101', title: 'The multi champion', points: 1888 },
+        { _id: '102', title: 'המסיע המתמיד', points: 8 },
+        { _id: '103', title: 'החונה במהירות', points: 8 },
+        { _id: '104', title: 'המטייל בחו"ל', points: 48 },
+        { _id: '105', title: 'העוזר לחבר', points: 588 },
+        { _id: '106', title: 'השומר על קשר', points: 18 },
+        { _id: '107', title: 'זה שכל היום בפלאפון', points: 8 },
+        { _id: '108', title: 'הרומנטיקן', points: 58 },
+        { _id: '109', title: 'rogue hazelnut!', points: 68 },
+        { _id: '110', title: 'יש ברית מילה לסבתא שלי', points: 8 },
+        { _id: '111', title: 'אכלתי שווארמה', points: 8 },
+        { _id: '112', title: 'הנוסע המתמיד', points: 8 },
+        { _id: '113', title: 'המביא פירות', points: 518 },
+        { _id: '114', title: 'האוהב להתארגן', points: 4998 },
+        { _id: '115', title: 'מפעיל שירים באוטו', points: 218 },
+        { _id: '116', title: 'איש המצלמה', points: 128 },
+        { _id: '117', title: 'המעיר על הנהיגה', points: 48 },
+        { _id: '118', title: 'זה שאף פעם אין לו וויז', points: 58 },
+      ]
+    },
+    
   ]
 }
 

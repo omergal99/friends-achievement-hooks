@@ -10,8 +10,9 @@ function AchievesPreview({ achieve, details, changeRate }) {
   const percentCompleted = (points / arrLevels[isUpgradeLevel ? level - 1 : level]) * 100;
 
   const sendNewRate = (value) => {
-    if ((points > 0 && value < 0) || (points < 5000 && value > 0))
+    if ((points > 0 && value < 0) || (points < 5000 && value > 0)){
       changeRate(achieve._id, value)
+    }
   }
 
   return (
