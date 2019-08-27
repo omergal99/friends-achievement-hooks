@@ -1,4 +1,4 @@
-.achieves-bar {
+.friends-bar {
   background-color: #dfecf4;
   background: linear-gradient(0.37turn, #dfecf4, #a8deff, #a6d6f5);
   height: 90px;
@@ -14,12 +14,13 @@
     list-style-type: none;
     display: flex;
     // justify-content: space-around;
+    justify-content: center;
     overflow-x: auto;
     li {
       align-items: center;
       justify-content: center;
       display: flex;
-      flex-basis: 300px;
+      flex-basis: 50px;
       flex-shrink: 3;
       // height: 100%;
       margin: auto 6px;

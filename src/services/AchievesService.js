@@ -108,13 +108,23 @@ const initialState = {
       description: 'הכותרת ברורה.. אין מה לפרט',
       icon: 'assets/img/icons/achieves/the navigator.png'
     },
-    
+
   ]
 }
 
 function getAchieves() {
-  return Promise.resolve(initialState)
+  // setTimeout(() => {
+  //   return Promise.resolve(initialState)
+  // }, 2000)
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(initialState);
+    }, 3000)
+  })
+  // return Promise.resolve(initialState)
 }
+
+
 
 export default {
   getAchieves

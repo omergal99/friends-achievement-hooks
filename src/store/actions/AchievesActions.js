@@ -4,7 +4,9 @@ import AchievesService from '../../services/AchievesService';
 function loadAchieves() {
   return async (dispatch) => {
     const achieves = await AchievesService.getAchieves();
-    dispatch({ type: 'setAchieves', payload: achieves })
+    if(achieves){
+      dispatch({ type: 'setAchieves', payload: achieves })
+    }
   }
 }
 

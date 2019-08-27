@@ -6,17 +6,17 @@ function FriendsList({ friendsList ,onSelectFriend }) {
     return <li onClick={()=> onSelectFriend(friend)} key={idx}>
       <div>
         <div className="wrap-img">
-          <img src={friend.img} alt="" />
+          <img src={friend.img} alt={friend.name} title={friend.name} />
         </div>
         <div className="name">
-          <label>{friend.name} </label>
+          <label>{friend.name}</label>
         </div>
       </div>
     </li>
   })
 
   return (
-    <div className="achieves-bar">
+    <div className="friends-bar">
       <ul>
         {list && list}
       </ul>

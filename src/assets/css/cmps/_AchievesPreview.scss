@@ -11,11 +11,11 @@
     top: 0;
   }
   ul {
-    margin: 0;
     padding: 4px;
     list-style-type: none;
     overflow-y: auto;
-    margin-top: 24px;
+    max-width: 500px;
+    margin: 24px auto 0;
     li {
       &:not(:first-child) {
         margin-top: 4px;

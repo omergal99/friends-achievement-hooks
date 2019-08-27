@@ -23,8 +23,8 @@ function FriendsAchieves() {
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // console.log('componentDidMount BY USING useEffect');
-    dispatch(actions.loadFriends());
     dispatch(actions.loadAchieves());
+    dispatch(actions.loadFriends());
   });
 
   const selectFriend = friend => {
@@ -39,9 +39,14 @@ function FriendsAchieves() {
 
   return (
     <div className="achieves">
-      <div>
-        <AchievesList achievesList={achieves} friend={selectedFriend} onChangeRate={friendRateChange.bind(this)} />
-      </div>
+      {achieves &&
+        <div>
+          <AchievesList achievesList={achieves} friend={selectedFriend} onChangeRate={friendRateChange.bind(this)} />
+        </div>
+      }
+      {!achieves && 
+      <div>Wait for the Achieves</div>
+      }
       <FriendsList friendsList={friends} onSelectFriend={selectFriend.bind(this)} />
     </div>
   );
