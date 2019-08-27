@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4de751f3cafbabd77c551535ce22a03b",
+    "revision": "e0a99358ffea93863715e15ae6b1d190",
     "url": "/friends-achievement-hooks/index.html"
   },
   {
-    "revision": "ce4cddde77e858d7f361",
-    "url": "/friends-achievement-hooks/static/css/main.e3475c17.chunk.css"
+    "revision": "7d62bc566d8e083960d3",
+    "url": "/friends-achievement-hooks/static/css/main.1e75427c.chunk.css"
   },
   {
     "revision": "27f1cbcebc2a1161d103",
     "url": "/friends-achievement-hooks/static/js/2.36c4eca5.chunk.js"
   },
   {
-    "revision": "ce4cddde77e858d7f361",
-    "url": "/friends-achievement-hooks/static/js/main.d671145d.chunk.js"
+    "revision": "7d62bc566d8e083960d3",
+    "url": "/friends-achievement-hooks/static/js/main.7dab5fce.chunk.js"
   },
   {
     "revision": "0d6af1e2512175a072a9",
